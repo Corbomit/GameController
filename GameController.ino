@@ -26,51 +26,51 @@ const char Zugschalter = KEY_ESC;  //Ende Spiel/Chat
 
 
 void setup() {
-pinMode(2, INPUT_PULLUP);
-pinMode(3, INPUT_PULLUP);
-pinMode(4, INPUT_PULLUP);
-pinMode(5, INPUT_PULLUP);
-pinMode(6, INPUT_PULLUP);
-pinMode(7, INPUT_PULLUP);
-pinMode(8, INPUT_PULLUP);
-Keyboard.begin();
+    pinMode(2, INPUT_PULLUP);
+    pinMode(3, INPUT_PULLUP);
+    pinMode(4, INPUT_PULLUP);
+    pinMode(5, INPUT_PULLUP);
+    pinMode(6, INPUT_PULLUP);
+    pinMode(7, INPUT_PULLUP);
+    pinMode(8, INPUT_PULLUP);
+    Keyboard.begin();
 } //setup
 
 void loop() {
-if (digitalRead(2) == LOW) {
-Keyboard.print(Zugschalter);
-delay(1500);
-}
+    if (digitalRead(2) == LOW) {
+        Keyboard.print(Zugschalter);
+        delay(1500);
+    } //if
 
-if (digitalRead(3) == LOW) {
-Keyboard.print(Kippschalter);
-delay(5000);
-}
+    if (digitalRead(3) == LOW) {
+        Keyboard.print(Kippschalter);
+        delay(5000);
+    } //if
 
-if (digitalRead(4) == LOW) {
-Keyboard.print(Doppelwipe1);
-delay(500);
-}
+    if (digitalRead(4) == LOW) {
+        Keyboard.print(Doppelwipe1);
+        delay(500);
+    } //if
 
-if (digitalRead(5) == LOW) {
-Keyboard.print(Doppelwipe2);
-delay(500);
-}
+    if (digitalRead(5) == LOW) {
+        Keyboard.print(Doppelwipe2);
+        delay(500);
+    } //if
 
-if (digitalRead(6) == LOW) {
-Keyboard.print(Taster);
-delay(500);
-}
+    if (digitalRead(6) == LOW) {
+        Keyboard.print(Taster);
+        delay(500);
+    } //if
 
-if (digitalRead(7) == LOW) {
-Keyboard.print(Wippe);
-delay(500);
-}
+    if (digitalRead(7) == LOW) {
+        Keyboard.print(Wippe);
+        delay(500);
+    } //if
 
-if (digitalRead(8) == LOW) {
-Keyboard.print(Sicherheitsschalter);
-delay(500);
-}
+    if (digitalRead(8) == LOW) {
+        Keyboard.print(Sicherheitsschalter);
+        delay(500);
+    } //if
 
-delay(100); //delay every loop
+    delay(100); //delay every loop
 } //loop
